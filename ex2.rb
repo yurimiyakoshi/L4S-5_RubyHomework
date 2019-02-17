@@ -7,23 +7,22 @@ def prime_number(number)
   else
     for x in 2..(number - 1)
       if number % x == 0
-        return 'false'
+        return false
         break
       elsif x == number - 1
-        return 'true'
+        return true
       end
     end
   end
 end
 
-result = prime_number(gets.to_i)
-if result == "true"
+if prime_number(number)
   puts "yes"
 else
   puts  "no"
 end
-# prime_number(gets.to_i)
+
 
 #number-1まで割る必要ない
 #2で割れた時点で他の偶数で割る必要がない
-#カラーコードとかは6けたで
+#カラーコードとかは6けたで処理すると時間かかったりするので注意
