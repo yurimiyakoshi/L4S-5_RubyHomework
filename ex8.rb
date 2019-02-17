@@ -19,9 +19,7 @@ class Account
   end
 
   def transfer(a, x)
-    unless withdraw(x)
-    else
-      withdraw(x)
+    if  withdraw(x)
       a.deposit(x)
     end
   end
