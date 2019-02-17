@@ -7,10 +7,10 @@ def prime_number(number)
   else
     for x in 2..(number - 1)
       if number % x == 0
-        return 'false'
+        return false
         break
       elsif x == number - 1
-        return 'true'
+        return true
       end
     end
   end
@@ -28,17 +28,8 @@ rescue RuntimeError
     retry
 end
 
-result = prime_number(num)
-if result == "true"
+if prime_number(num)
   puts "yes"
 else
   puts  "no"
 end
-
-# prime_number(gets.to_i)
-
-# begin
-# # 例外が起こるかも知れないコード
-# rescue => error # 変数(例外オブジェクトの代入)
-# # 例外が発生した時のコード
-# end
