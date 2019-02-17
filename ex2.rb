@@ -16,7 +16,7 @@ def prime_number(number)
   end
 end
 
-if prime_number(number)
+if prime_number(num)
   puts "yes"
 else
   puts  "no"
