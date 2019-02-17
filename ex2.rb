@@ -1,9 +1,9 @@
 def prime_number(number)
   # number = gets.to_i
   if number < 2
-    return 'false'
+    return false
   elsif number == 2
-    return 'true'
+    return true
   else
     for x in 2..(number - 1)
       if number % x == 0
